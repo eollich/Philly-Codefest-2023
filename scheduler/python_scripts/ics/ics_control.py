@@ -37,10 +37,10 @@ def generate_calendar():
         with open(f"{role}.ics", "wb") as f:
             f.write(cal.to_ical())
 
-def getAvailableTime():
+def getAvailableTime(list_of_paths):
     general_time_frames = {k:{k1:0 for k1 in range(9,18)} for k in range(1,32) if k not in weekends}
     lead_time_frames = {k:{k1:0 for k1 in range(9,18)} for k in range(1,32) if k not in weekends}
-    for cal in sys.argv[2:]:
+    for cal in list_of_paths:
         with open(cal, 'rb') as f:
             calendar = Calendar.from_ical(f.read())
             for component in calendar.walk():
@@ -91,7 +91,7 @@ def main():
     if sys.argv[1] == "generate":
         generate_calendar() # Generate the arguments
     elif sys.argv[1] == "available": # Get available time slots
-        available_time_list= getAvailableTime()
+        available_time_list= getAvailableTime(sys.argv[2:])
         time_slots = find_time_slot(11, 7, "Lead", 6, available_time_list) # starting day, offset days, type of meeting (Lead, General), number of hours needed, lsit of available times
         print(time_slots)
 
