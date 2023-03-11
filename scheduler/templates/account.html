@@ -1,0 +1,11 @@
+{% extends 'layouts/base.html' %}
+{% block content %}
+
+
+<h1>Users not following back: <span style="color: red;">{{ accounts | length }}</span></h1>
+
+{% for account in accounts %}
+  <h2>{{ account }} </h2>
+{% endfor %}
+
+{% endblock %}

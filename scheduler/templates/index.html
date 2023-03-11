@@ -1,0 +1,49 @@
+{% extends 'layouts/base.html' %}
+
+{% block css_files %}
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}"> 
+{% endblock %}
+
+{% block content %}
+
+  <script>
+    let x = "{{request.referrer}}"
+  </script>
+
+<form id="add" action="/add/" method="POST">
+        <input type="text" id="username" name="username" placeholder="username">
+        <input type="submit" value="Add Account">
+</form>
+
+<br>
+
+<!--Iterate through all users added-->
+{% for account in accounts %}
+<div style="cursor:pointer" onclick="getMoreDetails('{{account[0]}}')" class="container a1" id="__{{account[0]}}">
+  <!--<img src="{{ account[3] }}" alt="profile pic 1">-->
+  <div class="item">
+    <h1>{{ account[0] }}</h1>
+    <h1>Followers: <span>{{ account[1] }}</span><h1>
+    <h1>Following: <span>{{ account[2] }}</span></h1>
+    <a href="{{ url_for('delete', username=account[0] )}}">Delete </a>
+  </div>
+  </div>
+  <br>
+
+{% endfor %}
+
+  <script>
+document.querySelector('#add').onsubmit = function() {
+  this.setAttribute('action', "/p_add/" + document.querySelector('#add input[name=username]').value);
+}
+
+
+function getMoreDetails(account){
+  console.log(account);
+  location.href = `/p_followers/${account}`;
+}
+
+
+</script>
+
+{% endblock %}

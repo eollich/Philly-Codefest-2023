@@ -1,0 +1,16 @@
+/*name: DPP.css
+purpose: CSS styling for Data Privacy Policy Page
+date: 4/22/2021
+author(s): Summer Beasley
+dependencies: NONE
+*/
+
+body{
+}
+strong{
+  color: #895061;
+}
+
+h1, h2, h3{
+  color: #a55eea;
+}

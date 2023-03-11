@@ -1,0 +1,20 @@
+/*name: flashed.css
+purpose: allows for interactive messages to be shown to the user when they have done something such as created an account
+date: 3/18/2021
+author(s): Erick Meyer
+dependencies: None
+*/
+
+
+.flashed{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.flashed-error{
+  color: red;
+}
+
+.flashed-success{
+  color: green;
+}

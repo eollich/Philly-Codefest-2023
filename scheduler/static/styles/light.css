@@ -1,0 +1,38 @@
+/*name: light.css
+purpose: provide a light mode color theme
+date: 4/26/2021
+author(s): Jiacong Li, Summer Beasley
+dependencies: None
+*/
+
+
+
+:root{
+  --bg-color: #FEFFFF;
+  --nav-bg-color: #4E4E50;
+  --active-color: #C3073F;
+}
+
+body{
+  color: #000;
+  background: var(--bg-color);
+}
+
+.l-nav{
+  background: var(--nav-bg-color);
+}
+
+/* Active Links */
+.active{
+    color: var(--active-color);
+}
+
+.active::before{
+    background-color: var(--active-color);
+}
+
+/* This is the user added cards */
+.a1{
+  color: black;
+  background: white;
+}

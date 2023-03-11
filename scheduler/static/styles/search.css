@@ -1,0 +1,16 @@
+/*name: search.css
+purpose: style the quick search bar that is inherited by all other pages
+date: 4/22/2021
+author(s): Jiacong Li
+dependencies: NONE
+*/
+
+
+
+.uinfo{
+  text-align: center;
+}
+
+.uinfo span{
+  color: var(--active-color);
+}

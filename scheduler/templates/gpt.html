@@ -1,0 +1,15 @@
+{% extends 'layouts/base.html' %}
+{% block content %}
+  <h1>GPT Testing</h1>
+
+  <form action="{{url_for('gptTesting')}}" method="POST">
+    <label for="fname">Query:</label><br>
+    <input type="text" id="query" name="query"><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  {% if gpt%}
+    <h1>Content: {{gpt}}</h1>
+  {% endif %}
+
+{% endblock %}
