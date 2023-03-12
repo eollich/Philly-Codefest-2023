@@ -3,238 +3,238 @@ BEGIN:VEVENT
 SUMMARY:Dress well!
 DTSTART;TZID=US/Eastern:20230301T090000
 DTEND;TZID=US/Eastern:20230301T100000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Phone call with business partner
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Eat well before the meeting
 DTSTART;TZID=US/Eastern:20230302T090000
 DTEND;TZID=US/Eastern:20230302T110000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Discussion for Project B
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Eat well before the meeting
 DTSTART;TZID=US/Eastern:20230303T090000
 DTEND;TZID=US/Eastern:20230303T120000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Discussion for Project A
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Prepare for presentation
 DTSTART;TZID=US/Eastern:20230303T130000
 DTEND;TZID=US/Eastern:20230303T140000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Meeting with manager
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Eat well before the meeting
 DTSTART;TZID=US/Eastern:20230306T090000
 DTEND;TZID=US/Eastern:20230306T120000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Discussion for Project B
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Dress well!
 DTSTART;TZID=US/Eastern:20230307T090000
 DTEND;TZID=US/Eastern:20230307T120000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Discussion for Project B
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:No food!
 DTSTART;TZID=US/Eastern:20230308T090000
 DTEND;TZID=US/Eastern:20230308T120000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Meeting with manager
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Dress well!
 DTSTART;TZID=US/Eastern:20230309T090000
 DTEND;TZID=US/Eastern:20230309T110000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Team meeting
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Dress well!
 DTSTART;TZID=US/Eastern:20230310T090000
 DTEND;TZID=US/Eastern:20230310T120000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Team meeting
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Prepare for presentation
 DTSTART;TZID=US/Eastern:20230310T130000
 DTEND;TZID=US/Eastern:20230310T160000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Customer support
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:No food!
 DTSTART;TZID=US/Eastern:20230313T090000
 DTEND;TZID=US/Eastern:20230313T110000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Meeting with manager
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Prepare for presentation
 DTSTART;TZID=US/Eastern:20230314T090000
 DTEND;TZID=US/Eastern:20230314T100000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Team meeting
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Alcohol provided
 DTSTART;TZID=US/Eastern:20230315T090000
 DTEND;TZID=US/Eastern:20230315T120000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Discussion for Project A
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Dress well!
 DTSTART;TZID=US/Eastern:20230315T130000
 DTEND;TZID=US/Eastern:20230315T160000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Phone call with business partner
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Eat well before the meeting
 DTSTART;TZID=US/Eastern:20230316T090000
 DTEND;TZID=US/Eastern:20230316T120000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Discussion for Project B
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:No food!
 DTSTART;TZID=US/Eastern:20230317T090000
 DTEND;TZID=US/Eastern:20230317T110000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Meeting with manager
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Alcohol provided
 DTSTART;TZID=US/Eastern:20230320T090000
 DTEND;TZID=US/Eastern:20230320T120000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Customer support
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Eat well before the meeting
 DTSTART;TZID=US/Eastern:20230321T090000
 DTEND;TZID=US/Eastern:20230321T100000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Discussion for Project A
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:No food!
 DTSTART;TZID=US/Eastern:20230322T090000
 DTEND;TZID=US/Eastern:20230322T120000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Meeting with manager
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Dress well!
 DTSTART;TZID=US/Eastern:20230322T130000
 DTEND;TZID=US/Eastern:20230322T150000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Meeting with manager
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Alcohol provided
 DTSTART;TZID=US/Eastern:20230323T090000
 DTEND;TZID=US/Eastern:20230323T120000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Customer support
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:No food!
 DTSTART;TZID=US/Eastern:20230323T130000
 DTEND;TZID=US/Eastern:20230323T160000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Meeting with manager
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Alcohol provided
 DTSTART;TZID=US/Eastern:20230324T090000
 DTEND;TZID=US/Eastern:20230324T110000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Discussion for Project B
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Dress well!
 DTSTART;TZID=US/Eastern:20230324T120000
 DTEND;TZID=US/Eastern:20230324T140000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Discussion for Project B
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:No food!
 DTSTART;TZID=US/Eastern:20230327T090000
 DTEND;TZID=US/Eastern:20230327T110000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Meeting with manager
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:No food!
 DTSTART;TZID=US/Eastern:20230328T090000
 DTEND;TZID=US/Eastern:20230328T100000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Team meeting
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Alcohol provided
 DTSTART;TZID=US/Eastern:20230329T090000
 DTEND;TZID=US/Eastern:20230329T110000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Phone call with business partner
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Prepare for presentation
 DTSTART;TZID=US/Eastern:20230329T120000
 DTEND;TZID=US/Eastern:20230329T150000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Discussion for Project B
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Alcohol provided
 DTSTART;TZID=US/Eastern:20230330T090000
 DTEND;TZID=US/Eastern:20230330T110000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Team meeting
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Prepare for presentation
 DTSTART;TZID=US/Eastern:20230330T120000
 DTEND;TZID=US/Eastern:20230330T140000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Meeting with manager
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Prepare for presentation
 DTSTART;TZID=US/Eastern:20230330T150000
 DTEND;TZID=US/Eastern:20230330T160000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Team meeting
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Eat well before the meeting
 DTSTART;TZID=US/Eastern:20230331T090000
 DTEND;TZID=US/Eastern:20230331T120000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Discussion for Project B
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Eat well before the meeting
 DTSTART;TZID=US/Eastern:20230331T130000
 DTEND;TZID=US/Eastern:20230331T140000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Meeting with manager
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:No food!
 DTSTART;TZID=US/Eastern:20230331T150000
 DTEND;TZID=US/Eastern:20230331T170000
-ROLE:UI_UX designer_1
+ROLE:Software developer_1
 TITLE:Phone call with business partner
 END:VEVENT
 END:VCALENDAR

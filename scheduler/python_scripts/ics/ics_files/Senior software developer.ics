@@ -1,0 +1,336 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:Alcohol provided
+DTSTART;TZID=US/Eastern:20230301T090000
+DTEND;TZID=US/Eastern:20230301T110000
+ROLE:Senior software developer
+TITLE:Team meeting
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No food!
+DTSTART;TZID=US/Eastern:20230301T120000
+DTEND;TZID=US/Eastern:20230301T150000
+ROLE:Senior software developer
+TITLE:Phone call with business partner
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Prepare for presentation
+DTSTART;TZID=US/Eastern:20230302T090000
+DTEND;TZID=US/Eastern:20230302T100000
+ROLE:Senior software developer
+TITLE:Team meeting
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dress well!
+DTSTART;TZID=US/Eastern:20230302T110000
+DTEND;TZID=US/Eastern:20230302T140000
+ROLE:Senior software developer
+TITLE:Team meeting
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No food!
+DTSTART;TZID=US/Eastern:20230303T090000
+DTEND;TZID=US/Eastern:20230303T110000
+ROLE:Senior software developer
+TITLE:Team meeting
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Eat well before the meeting
+DTSTART;TZID=US/Eastern:20230303T120000
+DTEND;TZID=US/Eastern:20230303T130000
+ROLE:Senior software developer
+TITLE:Discussion for Project A
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Prepare for presentation
+DTSTART;TZID=US/Eastern:20230303T140000
+DTEND;TZID=US/Eastern:20230303T150000
+ROLE:Senior software developer
+TITLE:Team meeting
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No food!
+DTSTART;TZID=US/Eastern:20230306T090000
+DTEND;TZID=US/Eastern:20230306T100000
+ROLE:Senior software developer
+TITLE:Meeting with manager
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Prepare for presentation
+DTSTART;TZID=US/Eastern:20230306T110000
+DTEND;TZID=US/Eastern:20230306T120000
+ROLE:Senior software developer
+TITLE:Team meeting
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Alcohol provided
+DTSTART;TZID=US/Eastern:20230307T090000
+DTEND;TZID=US/Eastern:20230307T120000
+ROLE:Senior software developer
+TITLE:Customer support
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Prepare for presentation
+DTSTART;TZID=US/Eastern:20230308T090000
+DTEND;TZID=US/Eastern:20230308T100000
+ROLE:Senior software developer
+TITLE:Discussion for Project B
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Alcohol provided
+DTSTART;TZID=US/Eastern:20230308T110000
+DTEND;TZID=US/Eastern:20230308T130000
+ROLE:Senior software developer
+TITLE:Discussion for Project B
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No food!
+DTSTART;TZID=US/Eastern:20230309T090000
+DTEND;TZID=US/Eastern:20230309T100000
+ROLE:Senior software developer
+TITLE:Meeting with manager
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Prepare for presentation
+DTSTART;TZID=US/Eastern:20230310T090000
+DTEND;TZID=US/Eastern:20230310T120000
+ROLE:Senior software developer
+TITLE:Discussion for Project B
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Prepare for presentation
+DTSTART;TZID=US/Eastern:20230310T130000
+DTEND;TZID=US/Eastern:20230310T140000
+ROLE:Senior software developer
+TITLE:Meeting with manager
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Alcohol provided
+DTSTART;TZID=US/Eastern:20230310T150000
+DTEND;TZID=US/Eastern:20230310T160000
+ROLE:Senior software developer
+TITLE:Customer support
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Eat well before the meeting
+DTSTART;TZID=US/Eastern:20230313T090000
+DTEND;TZID=US/Eastern:20230313T120000
+ROLE:Senior software developer
+TITLE:Team meeting
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dress well!
+DTSTART;TZID=US/Eastern:20230313T130000
+DTEND;TZID=US/Eastern:20230313T150000
+ROLE:Senior software developer
+TITLE:Discussion for Project A
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Prepare for presentation
+DTSTART;TZID=US/Eastern:20230313T160000
+DTEND;TZID=US/Eastern:20230313T170000
+ROLE:Senior software developer
+TITLE:Team meeting
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Eat well before the meeting
+DTSTART;TZID=US/Eastern:20230314T090000
+DTEND;TZID=US/Eastern:20230314T110000
+ROLE:Senior software developer
+TITLE:Customer support
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No food!
+DTSTART;TZID=US/Eastern:20230314T120000
+DTEND;TZID=US/Eastern:20230314T140000
+ROLE:Senior software developer
+TITLE:Meeting with manager
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dress well!
+DTSTART;TZID=US/Eastern:20230315T090000
+DTEND;TZID=US/Eastern:20230315T110000
+ROLE:Senior software developer
+TITLE:Team meeting
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dress well!
+DTSTART;TZID=US/Eastern:20230315T120000
+DTEND;TZID=US/Eastern:20230315T130000
+ROLE:Senior software developer
+TITLE:Phone call with business partner
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Alcohol provided
+DTSTART;TZID=US/Eastern:20230315T140000
+DTEND;TZID=US/Eastern:20230315T150000
+ROLE:Senior software developer
+TITLE:Discussion for Project A
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No food!
+DTSTART;TZID=US/Eastern:20230316T090000
+DTEND;TZID=US/Eastern:20230316T100000
+ROLE:Senior software developer
+TITLE:Phone call with business partner
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No food!
+DTSTART;TZID=US/Eastern:20230316T110000
+DTEND;TZID=US/Eastern:20230316T130000
+ROLE:Senior software developer
+TITLE:Discussion for Project A
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Prepare for presentation
+DTSTART;TZID=US/Eastern:20230316T140000
+DTEND;TZID=US/Eastern:20230316T150000
+ROLE:Senior software developer
+TITLE:Discussion for Project B
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Prepare for presentation
+DTSTART;TZID=US/Eastern:20230317T090000
+DTEND;TZID=US/Eastern:20230317T110000
+ROLE:Senior software developer
+TITLE:Discussion for Project A
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Eat well before the meeting
+DTSTART;TZID=US/Eastern:20230317T120000
+DTEND;TZID=US/Eastern:20230317T130000
+ROLE:Senior software developer
+TITLE:Discussion for Project A
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Alcohol provided
+DTSTART;TZID=US/Eastern:20230320T090000
+DTEND;TZID=US/Eastern:20230320T120000
+ROLE:Senior software developer
+TITLE:Phone call with business partner
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Prepare for presentation
+DTSTART;TZID=US/Eastern:20230320T130000
+DTEND;TZID=US/Eastern:20230320T150000
+ROLE:Senior software developer
+TITLE:Team meeting
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Alcohol provided
+DTSTART;TZID=US/Eastern:20230320T160000
+DTEND;TZID=US/Eastern:20230320T170000
+ROLE:Senior software developer
+TITLE:Team meeting
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dress well!
+DTSTART;TZID=US/Eastern:20230321T090000
+DTEND;TZID=US/Eastern:20230321T110000
+ROLE:Senior software developer
+TITLE:Team meeting
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Alcohol provided
+DTSTART;TZID=US/Eastern:20230322T090000
+DTEND;TZID=US/Eastern:20230322T110000
+ROLE:Senior software developer
+TITLE:Meeting with manager
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No food!
+DTSTART;TZID=US/Eastern:20230323T090000
+DTEND;TZID=US/Eastern:20230323T120000
+ROLE:Senior software developer
+TITLE:Meeting with manager
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Eat well before the meeting
+DTSTART;TZID=US/Eastern:20230323T130000
+DTEND;TZID=US/Eastern:20230323T140000
+ROLE:Senior software developer
+TITLE:Customer support
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No food!
+DTSTART;TZID=US/Eastern:20230324T090000
+DTEND;TZID=US/Eastern:20230324T120000
+ROLE:Senior software developer
+TITLE:Discussion for Project B
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dress well!
+DTSTART;TZID=US/Eastern:20230324T130000
+DTEND;TZID=US/Eastern:20230324T140000
+ROLE:Senior software developer
+TITLE:Discussion for Project A
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Prepare for presentation
+DTSTART;TZID=US/Eastern:20230327T090000
+DTEND;TZID=US/Eastern:20230327T120000
+ROLE:Senior software developer
+TITLE:Meeting with manager
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dress well!
+DTSTART;TZID=US/Eastern:20230328T090000
+DTEND;TZID=US/Eastern:20230328T100000
+ROLE:Senior software developer
+TITLE:Discussion for Project A
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No food!
+DTSTART;TZID=US/Eastern:20230328T110000
+DTEND;TZID=US/Eastern:20230328T140000
+ROLE:Senior software developer
+TITLE:Team meeting
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Prepare for presentation
+DTSTART;TZID=US/Eastern:20230329T090000
+DTEND;TZID=US/Eastern:20230329T110000
+ROLE:Senior software developer
+TITLE:Phone call with business partner
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Prepare for presentation
+DTSTART;TZID=US/Eastern:20230330T090000
+DTEND;TZID=US/Eastern:20230330T120000
+ROLE:Senior software developer
+TITLE:Customer support
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dress well!
+DTSTART;TZID=US/Eastern:20230330T130000
+DTEND;TZID=US/Eastern:20230330T160000
+ROLE:Senior software developer
+TITLE:Discussion for Project B
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Prepare for presentation
+DTSTART;TZID=US/Eastern:20230331T090000
+DTEND;TZID=US/Eastern:20230331T120000
+ROLE:Senior software developer
+TITLE:Team meeting
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No food!
+DTSTART;TZID=US/Eastern:20230331T130000
+DTEND;TZID=US/Eastern:20230331T160000
+ROLE:Senior software developer
+TITLE:Phone call with business partner
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:\n\n- Research ReactNative and its potential for integration in th
+ e company's mobile app\n- Create a presentation on ReactNative and its pot
+ ential for the company's mobile app\n- Share the presentation with the sen
+ ior software developer\n- Discuss the pros and cons of ReactNative with th
+ e senior software developer\n- Decide whether or not to integrate ReactNat
+ ive into the company's mobile app
+DTSTART;TZID=US/Eastern:20230329T110000
+DTEND;TZID=US/Eastern:20230329T150000
+ROLE:Senior software developer
+TITLE:Application Development Meeting
+END:VEVENT
+END:VCALENDAR
