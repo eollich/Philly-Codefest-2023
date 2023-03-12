@@ -14,7 +14,18 @@
     product manager
     ui/ux designer
     software test engineer
-
   -->
-
+  <form action="{{url_for('generateMeeting')}}" method="POST">
+	  <label for="meeting_title">Meeting Title</label></br>
+	  <input type="text" id="title" name="title" required maxlength="30" size="25"></br>
+	  <label for="meeting_desc">Meeting Description</label></br>
+	  <input type="text" id="desc" name="desc" required size="100"></br>
+	  {% set roles=["Lead_product_manager", "Lead_software_developer", "Lead_UI_UX_designer", "Lead_software_test_engineer", "Product_manager", "Software_developer", "UI_UX_designer", "Software_test_engineer"] %}
+	  {% for role in roles %}
+		<input type="checkbox" id={{ role }} name= {{ "role" }} value={{ role }}>
+		<label for={{ "role" }}>{{ role | replace("_", " ") }}</label></br>
+	  {% endfor %}
+	  </br>
+	  <input type="submit" name="confirm" value="Confirm">
+  </form>
 {% endblock %}
