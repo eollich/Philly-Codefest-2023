@@ -1,49 +1,74 @@
 {% extends 'layouts/base.html' %}
 
-{% block css_files %}
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}"> 
-{% endblock %}
-
 {% block content %}
 
-  <script>
-    let x = "{{request.referrer}}"
-  </script>
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.min.js'></script>
 
-<form id="add" action="/add/" method="POST">
-        <input type="text" id="username" name="username" placeholder="username">
-        <input type="submit" value="Add Account">
-</form>
+  <form action="{{url_for('index')}}" method="POST">
+    <label for="date">Date</label><br>
+    <input type="date" id="starting_date" name="starting_date" value=""><br>
+    <label for="offset">Offset</label><br>
+    <select name="offset" id="offset">
+      <option value="week">Week</option>
+      <option value="month">Month</option>
+    </select>
+    <br>
+    <label for="hours">Number of hours</label><br>
+    <input type="number" id="hours" name="hours" min = "1" max="24" step="1" value="1"><br>
+    <br>
+    <label for="needed">Who's needed?</label><br>
+    <select name="needed" id="needed">
+      <option value="Lead">Lead</option>
+      <option value="General">General</option>
+    </select>
+    <br>
+    <input type="submit" name="generate" value="Generate">
+  </form>
+
+  <script>
+
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+
+    </script>
+
+    {% if not time_slots  %}
+      <h1>No possible times fit. Please try again with different parameters</h1>
+    {% elif time_slots|length==1 and not time_slots[0] %}
+    {% else %}
+    <form action="{{url_for('generateMeeting')}}" method="POST" >
+      <label for="time_slot">Time Slot</label><br>
+      <select name="time_slot" id="time_slot">
+      {% for dic in time_slots %}
+      {% for day, hours in dic.items() %}
+        {% if hours|length == 1 %}
+          {% set st = hours[0]|string %}
+        {% else %}
+          {% set st = hours[0]|string + "-" + hours[-1]|string %}
+        {% endif %}
+        if len(hours)==1, str = day[0]
+        <option value={{ (day, (hours[0],hours[-1]+1)) }}>{{ "days "+day|string }}:{{ "hours "+st }}</option>
+      {% endfor %}
+      {% endfor %}
+      </select>
+    <input type="submit" value="Select time">
+    </form>
+    {% endif %}
+
+    <!--<div id='calendar'></div>-->
 
 <br>
 
-<!--Iterate through all users added-->
-{% for account in accounts %}
-<div style="cursor:pointer" onclick="getMoreDetails('{{account[0]}}')" class="container a1" id="__{{account[0]}}">
-  <!--<img src="{{ account[3] }}" alt="profile pic 1">-->
-  <div class="item">
-    <h1>{{ account[0] }}</h1>
-    <h1>Followers: <span>{{ account[1] }}</span><h1>
-    <h1>Following: <span>{{ account[2] }}</span></h1>
-    <a href="{{ url_for('delete', username=account[0] )}}">Delete </a>
-  </div>
-  </div>
-  <br>
-
-{% endfor %}
 
   <script>
-document.querySelector('#add').onsubmit = function() {
-  this.setAttribute('action', "/p_add/" + document.querySelector('#add input[name=username]').value);
-}
+    document.getElementById('starting_date').valueAsDate = new Date();
+  </script>
 
-
-function getMoreDetails(account){
-  console.log(account);
-  location.href = `/p_followers/${account}`;
-}
-
-
-</script>
 
 {% endblock %}
