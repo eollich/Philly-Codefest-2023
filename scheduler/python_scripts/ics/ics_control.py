@@ -80,7 +80,8 @@ def get_maximum_contiguous(hour_list):
 
 def find_time_slot(today, offset, group_type, hours_needed, available_time_list):
     ret = []
-    for day in range(today, today+offset+1):
+    end = min(31, today+offset)
+    for day in range(today, end+1):
         if day in weekends:
             continue
         if hours_needed <= get_maximum_contiguous(available_time_list[group_type][day]):
