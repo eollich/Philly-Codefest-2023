@@ -321,14 +321,4 @@ DTEND;TZID=US/Eastern:20230331T160000
 ROLE:Senior UI_UX designer
 TITLE:Phone call with business partner
 END:VEVENT
-BEGIN:VEVENT
-SUMMARY:\n\n- Research ReactNative and its potential for integration in th
- e company's mobile app\n- Create a presentation on ReactNative and its pot
- ential for the company's mobile app\n- Present the findings to the senior 
- UI_UX designer and discuss potential next steps
-DTSTART;TZID=US/Eastern:20230329T110000
-DTEND;TZID=US/Eastern:20230329T150000
-ROLE:Senior UI_UX designer
-TITLE:Application Development Meeting
-END:VEVENT
 END:VCALENDAR

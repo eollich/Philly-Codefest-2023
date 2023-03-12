@@ -2,3 +2,4 @@ flask
 flaskwebgui
 openai
 icalendar
+ics

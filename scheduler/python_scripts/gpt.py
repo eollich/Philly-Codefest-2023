@@ -16,7 +16,7 @@ def query(query_string):
 
 
 def query2(query_string):
-    ai_key = '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'
+    ai_key = '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'
     openai.api_key = ai_key
     
     response = openai.Completion.create(

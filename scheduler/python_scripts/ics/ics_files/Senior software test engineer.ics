@@ -321,15 +321,4 @@ DTEND;TZID=US/Eastern:20230331T160000
 ROLE:Senior software test engineer
 TITLE:Phone call with business partner
 END:VEVENT
-BEGIN:VEVENT
-SUMMARY:\n\n- Research ReactNative\n- Understand how ReactNative works\n- 
- Decide if ReactNative is the right tool for the job\n- Create a prototype 
- using ReactNative\n- Test the prototype\n- Present the prototype to the te
- am\n- Get feedback from the team\n- Implement ReactNative in the mobile ap
- p
-DTSTART;TZID=US/Eastern:20230329T110000
-DTEND;TZID=US/Eastern:20230329T150000
-ROLE:Senior software test engineer
-TITLE:Application Development Meeting
-END:VEVENT
 END:VCALENDAR

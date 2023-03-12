@@ -7,5 +7,5 @@ if __name__ == "__main__":
     #else:
     #    app.run(debug = True)
     #final / deployment
-    #FlaskUI(app=app, server="flask").run()
-    app.run(debug=True)
+    FlaskUI(app=app, server="flask").run()
+    #app.run(debug=True)

@@ -321,13 +321,4 @@ DTEND;TZID=US/Eastern:20230331T160000
 ROLE:Senior product manager
 TITLE:Phone call with business partner
 END:VEVENT
-BEGIN:VEVENT
-SUMMARY:\n\n- Define the purpose of the meeting\n- Identify the attendees\
- n- Develop the agenda\n- Send out meeting invitations\n- Prepare meeting m
- aterials\n- Create a follow-up plan
-DTSTART;TZID=US/Eastern:20230329T110000
-DTEND;TZID=US/Eastern:20230329T150000
-ROLE:Senior product manager
-TITLE:Application Development Meeting
-END:VEVENT
 END:VCALENDAR

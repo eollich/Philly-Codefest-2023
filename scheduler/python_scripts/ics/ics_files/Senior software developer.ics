@@ -321,16 +321,4 @@ DTEND;TZID=US/Eastern:20230331T160000
 ROLE:Senior software developer
 TITLE:Phone call with business partner
 END:VEVENT
-BEGIN:VEVENT
-SUMMARY:\n\n- Research ReactNative and its potential for integration in th
- e company's mobile app\n- Create a presentation on ReactNative and its pot
- ential for the company's mobile app\n- Share the presentation with the sen
- ior software developer\n- Discuss the pros and cons of ReactNative with th
- e senior software developer\n- Decide whether or not to integrate ReactNat
- ive into the company's mobile app
-DTSTART;TZID=US/Eastern:20230329T110000
-DTEND;TZID=US/Eastern:20230329T150000
-ROLE:Senior software developer
-TITLE:Application Development Meeting
-END:VEVENT
 END:VCALENDAR

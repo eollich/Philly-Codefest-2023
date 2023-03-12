@@ -16,9 +16,9 @@
 
 
         {% if title %}
-          <title>Followers - {{ title }}</title>
+          <title>Scheduler- {{ title }}</title>
         {% else %}
-          <title>Followers</title>
+          <title>Scheduler</title>
         {% endif %}
         <script>
           const url ="{{request.url.replace('http://localhost:5000','')}}"
@@ -28,12 +28,6 @@
     </head>
     <body id="body-pd">
       <header>
-        <div class="search">
-        <form id="search" action="/search/" method="POST">
-          <span><input type="text" id="username" name="username" placeholder="username">
-            <input type="submit" value="Quick Search"></span>
-        </form>
-        </div>
   <script>
 document.querySelector('#search').onsubmit = function() {
   this.setAttribute('action', "/pupsearch/" + document.querySelector('#search input[name=username]').value)
@@ -50,22 +44,17 @@ document.querySelector('#search').onsubmit = function() {
                     </div>
                     <div class="nav__list">
                         <a href="/" id ="/" class="nav__link">
-                            <i class='bx bx-home nav__icon'></i>
-                            <span class="nav__name">Dashboard</span>
+                            <i class='bx bx-check-double nav__icon' ></i>
+                            <span class="nav__name">Schedule</span>
                         </a>
                         
-
-                        <a href="{{ url_for('settings')}}" id="/settings" class="nav__link">
-                            <i class='bx bx-cog nav__icon' ></i>
-                            <span class="nav__name">Settings</span>
-                        </a>
 
 
 
                         <!-- GPT -->
-                        <a href="{{ url_for('gptTesting')}}" id="/gptTesting" class="nav__link">
-                          <i class='bx bx-chevrons-right nav__icon' ></i>
-                          <span class="nav__name">GPT Testing</span>
+                        <a href="{{ url_for('viewCalendar')}}" id="/viewCalendar" class="nav__link">
+                          <i class='bx bxs-calendar nav__icon' ></i>
+                          <span class="nav__name">Calendars</span>
                         </a>
 
                     </div>

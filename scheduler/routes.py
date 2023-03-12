@@ -1,4 +1,4 @@
-from flask import render_template, url_for, flash, redirect, request, abort, jsonify
+from flask import render_template, url_for, flash, redirect, request, abort, jsonify, json
 from scheduler import app
 from scheduler.python_scripts.ics import ics_control
 from scheduler.python_scripts.gpt import query2, generateQueryString
@@ -21,9 +21,9 @@ def index():
         files = [ICS_DIR_PATH+"/"+x for x in os.listdir(ICS_DIR_PATH)]
         available_time_list= ics_control.getAvailableTime(files)
         time_slots = ics_control.find_time_slot(day, int(offset), data["needed"], int(data["hours"]), available_time_list) # starting day, offset days, type of meeting (Senior, General), number of hours needed, lsit of available times
-        return render_template("index.html",time_slots = time_slots)
+        return render_template("index.html",time_slots = time_slots,title="schedule meeting" )
     else:
-        return render_template("index.html", time_slots=[None])
+        return render_template("index.html", time_slots=[None], title="schedule meeting")
 
 @app.route('/dataPrivacyPolicy')
 def dataPrivacyPolicy():
@@ -68,4 +68,52 @@ def updateMeeting():
         summary = query2(queryString)
         ics_control.add_new_event(ICS_DIR_PATH, role, title, summary, day, start_hour, end_hour)
 
-    return render_template("generateMeeting.html", info= [day, start_hour, end_hour, title, summary, roles])
+    flash("Meeting successfully added to all relevant calendars", "success")
+    #return render_template("generateMeeting.html", info= [day, start_hour, end_hour, title, summary, roles])
+    return redirect(url_for('viewCalendar'))
+
+@app.route("/viewCalendar", methods=["GET","POST"], defaults={'optional': None})
+@app.route("/viewCalendar/<optional>", methods=["GET","POST"])
+def viewCalendar(optional):
+    import icalendar
+    cal_data = None
+    fil = None
+    files = [x for x in os.listdir(ICS_DIR_PATH)]
+
+    if request.method == "GET":
+        if optional == None:
+            fil = files[0]
+        else:
+            fil = optional
+        cal_name = fil
+        print(type(optional))
+        print(f"OPTIONAL {optional}")
+        with open(ICS_DIR_PATH+"/"+fil) as cal_file_data:
+            calendar = icalendar.Calendar.from_ical(cal_file_data.read())
+            events = []
+            for component in calendar.walk():
+                if component.name == "VEVENT":
+                    start_date = component.get("dtstart").dt
+                    end_date = component.get("dtend").dt
+                    day = start_date.day
+                    start_hour = start_date.hour
+                    end_hour = end_date.hour
+                    summary = component.get("summary")
+                    title = component.get("title")
+                    start_date = start_date.strftime("%Y-%m-%dT%H:%M:%S")
+                    end_date = end_date.strftime("%Y-%m-%dT%H:%M:%S")
+                    events.append((title, start_date, end_date, day, start_hour, end_hour, summary))
+    else:
+        return request.form
+
+    return render_template("viewCalendar.html", cal_files = files, events = json.dumps(events), cal_name = cal_name, title="calender")
+
+@app.route("/test")
+def test():
+    return render_template("temp.html")
+
+@app.route("/cals/<name>")
+def cal(name): 
+    path = ICS_DIR_PATH+"/"+name
+    with open(path, "r") as f:
+        return f.read()
