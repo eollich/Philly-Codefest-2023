@@ -78,14 +78,28 @@ def get_maximum_contiguous(hour_list):
                 curr_count = 1
         return max(max_count, curr_count) # Final update
 
+def get_time_slot(list_of_time_slots, hours_needed):
+    new_arr = [list_of_time_slots[0]]
+    if hours_needed == 1:
+        return new_arr
+    for i in range(len(list_of_time_slots)-1):
+        if list_of_time_slots[i+1] - list_of_time_slots[i] == 1:
+            new_arr.append(list_of_time_slots[i+1])
+            if len(new_arr) == hours_needed:
+                return new_arr
+        else:
+            new_arr = [list_of_time_slots[i+1]]
+    return new_arr
+
 def find_time_slot(today, offset, group_type, hours_needed, available_time_list):
     ret = []
     end = min(31, today+offset)
     for day in range(today, end+1):
         if day in weekends:
             continue
-        if hours_needed <= get_maximum_contiguous(available_time_list[group_type][day]):
-            ret.append({day : available_time_list[group_type][day]})
+        max_time = get_maximum_contiguous(available_time_list[group_type][day])
+        if hours_needed <= max_time:
+            ret.append({day : get_time_slot(available_time_list[group_type][day], hours_needed)})
     return ret
 
 def main():
