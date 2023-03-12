@@ -3,19 +3,27 @@ from datetime import datetime
 from pytz import timezone # Timezone
 import sys
 import random
+import os
 
 random.seed(2023) # For reproducibility
 weekends = [4,5,11,12,18,19,25,26]
-list_of_summaries = ["Meeting with manager", "Discussion for Project A", "Phone call with business partner", "Customer support", "Discussion for Project B", "Team meeting"]
+list_of_titles = ["Meeting with manager", "Discussion for Project A", "Phone call with business partner", "Customer support", "Discussion for Project B", "Team meeting"]
+list_of_summaries = ["Prepare for presentation", "Eat well before the meeting", "Dress well!", "Alcohol provided", "No food!"]
+tz = timezone('US/Eastern')
 
 def generate_calendar():
-    tz = timezone('US/Eastern')
     for i in range(int(sys.argv[3])):
         role = sys.argv[2]
         if i == 0: # Make it the lead role
-            role = f"Lead {sys.argv[2]}"
+            role = f"Senior {sys.argv[2]}"
         else:
             role = f"{sys.argv[2]}_{i}"
+        # Formatting uppercase to be the first character only
+        role = role.split()
+        role = " ".join([x.lower() if x!= "UI_UX" else "UI_UX" for x in role])
+        role = list(role)
+        role[0] = role[0].upper()
+        role = "".join(role)
         cal = Calendar() # Create calendar
         for day in range(1, 32): # for each day
             if day in weekends: # March specific
@@ -23,6 +31,7 @@ def generate_calendar():
             visited = {k:0 for k in range(9, 17)}
             for _ in range(random.randint(1, 3)): # can have 1 to 3 events a day
                 event = Event()
+                event.add('title', list_of_titles[random.randint(0, len(list_of_titles)-1)])
                 event.add('summary', list_of_summaries[random.randint(0, len(list_of_summaries)-1)])
                 start_time = sorted(visited.keys(), key = lambda x: (visited[x], x))[0]
                 if visited[start_time]: # Will only be true if all the slots are filled
@@ -53,15 +62,15 @@ def getAvailableTime(list_of_paths):
                     end_hour = end_date.hour
                     for i in range(start_hour, end_hour):
                         general_time_frames[day][i] += 1
-                        if "Lead" in component.get("role"):
+                        if "Senior" in component.get("role"):
                             lead_time_frames[day][i] += 1
-    available_time_list = {k:{day:[] for day in range(1,32) if day not in weekends} for k in ["General", "Lead"]}
+    available_time_list = {k:{day:[] for day in range(1,32) if day not in weekends} for k in ["General", "Senior"]}
     for day in general_time_frames:
         for hour in general_time_frames[day]:
             if general_time_frames[day][hour] == 0:
                 available_time_list["General"][day].append(hour)
             if lead_time_frames[day][hour] == 0:
-                available_time_list["Lead"][day].append(hour)
+                available_time_list["Senior"][day].append(hour)
     return available_time_list
 
 def get_maximum_contiguous(hour_list):
@@ -102,13 +111,33 @@ def find_time_slot(today, offset, group_type, hours_needed, available_time_list)
             ret.append({day : get_time_slot(available_time_list[group_type][day], hours_needed)})
     return ret
 
+def add_new_event(path_to_ics_dir, role, title, summary, day, start_hour, end_hour):
+    for cal_file in os.listdir(path_to_ics_dir):
+        print(f"{role} : {cal_file}")
+        if cal_file.startswith(role):
+            with open(f"{path_to_ics_dir}/{cal_file}", "rb") as f:
+                calendar = Calendar.from_ical(f.read())
+                event = Event()
+                event.add('title', title)
+                event.add('summary', summary)
+                event.add('dtstart', datetime(2023, 3, day, start_hour, 0, 0, tzinfo=tz))
+                event.add('dtend', datetime(2023, 3, day, end_hour, 0, 0, tzinfo=tz))
+                event['role'] = role
+                calendar.add_component(event)
+            with open(f"{path_to_ics_dir}/{cal_file}", "wb") as f:
+                f.write(calendar.to_ical())
+    return
+
 def main():
     if sys.argv[1] == "generate":
         generate_calendar() # Generate the arguments
     elif sys.argv[1] == "available": # Get available time slots
         available_time_list= getAvailableTime(sys.argv[2:])
-        time_slots = find_time_slot(12, 30, "Lead", 1, available_time_list) # starting day, offset days, type of meeting (Lead, General), number of hours needed, list of available times
+        time_slots = find_time_slot(12, 30, "General", 6, available_time_list) # starting day, offset days, type of meeting (Senior, General), number of hours needed, list of available times
         print(time_slots)
+    elif sys.argv[1] == "add": # Add new data
+        role = sys.argv[2]
+        add_new_event("./ics_files", role, "ASDASDASD", 1, 10, 12)
 
 if __name__ == "__main__":
     main()

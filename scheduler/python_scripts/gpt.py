@@ -1,7 +1,7 @@
 import openai
 
 def query(query_string):
-    ai_key = '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'
+    ai_key = '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'
     openai.api_key = ai_key
 
     x = openai.ChatCompletion.create(
@@ -16,7 +16,7 @@ def query(query_string):
 
 
 def query2(query_string):
-    ai_key = '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'
+    ai_key = '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'
     openai.api_key = ai_key
     
     response = openai.Completion.create(
