@@ -52,8 +52,7 @@
         {% else %}
           {% set st = hours[0]|string + "-" + hours[-1]|string %}
         {% endif %}
-        if len(hours)==1, str = day[0]
-        <option value={{ (day, (hours[0],hours[-1]+1)) }}>{{ "days "+day|string }}:{{ "hours "+st }}</option>
+        <option value={{ day|string+"-"+hours[0]|string+":"+(hours[-1]+1)|string }}>{{ "days "+day|string }}:{{ "hours "+st }}</option>
       {% endfor %}
       {% endfor %}
       </select>

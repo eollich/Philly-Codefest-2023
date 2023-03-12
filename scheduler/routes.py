@@ -51,4 +51,4 @@ def gptTesting():
 @app.route("/generateMeeting", methods=["POST"])
 def generateMeeting():
     print(type(request.form.get('time_slot')))
-    return render_template("generateMeeting.html", info = request.form.get('time_slot'))
+    return render_template("generateMeeting.html", info = request.form)
