@@ -107,7 +107,7 @@ def main():
         generate_calendar() # Generate the arguments
     elif sys.argv[1] == "available": # Get available time slots
         available_time_list= getAvailableTime(sys.argv[2:])
-        time_slots = find_time_slot(11, 7, "Lead", 6, available_time_list) # starting day, offset days, type of meeting (Lead, General), number of hours needed, list of available times
+        time_slots = find_time_slot(12, 30, "Lead", 1, available_time_list) # starting day, offset days, type of meeting (Lead, General), number of hours needed, list of available times
         print(time_slots)
 
 if __name__ == "__main__":
